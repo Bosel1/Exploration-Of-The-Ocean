@@ -1,0 +1,26 @@
+import random
+
+class GuessTheMovie:
+def _init_(self):
+self.movies = ["Inception", "The Shawshank Redemption", "Pulp Fiction", "The Godfather", "Forrest Gump"]
+self.used_movies = []
+
+def play(self):
+print("Welcome to Guess the Movie! Try to guess the movie titles without repeating.")
+
+while self.movies:
+movie = random.choice(self.movies)
+self.movies.remove(movie)
+self.used_movies.append(movie)
+guess = input(f"Guess the movie: {movie[0]}{'*'*(len(movie)-1)} ")
+if guess.lower() == movie.lower():
+print("Correct! Next movie.")
+else:
+print("Incorrect. Game over!")
+break
+
+if not self.movies:
+print("Congratulations! You've guessed all the movie titles.")
+
+game = GuessTheMovie()
+game.play()
