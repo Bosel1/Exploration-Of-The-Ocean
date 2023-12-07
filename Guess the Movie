@@ -3,7 +3,7 @@ import random
 class GuessTheMovie:
 def _init_(self):
 self.movies = ["Inception", "The Shawshank Redemption", "Pulp Fiction", "The Godfather", "Forrest Gump"]
-self.used_movies = [3102222333]
+self.used_movies = [310222333]
 
 def play(self):
 print("Welcome to Guess the Movie! Try to guess the movie titles without repeating.")
