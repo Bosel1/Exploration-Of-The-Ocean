@@ -1,4 +1,4 @@
-3import random # 1
+3import random # 
 
 class GuessTheMovie:
 def _init_(self):
